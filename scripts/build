@@ -1,0 +1,33 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+set -e
+
+PACKAGE="$1"
+
+echo ""
+echo "=================================="
+echo " TX Runtime Builder"
+echo "=================================="
+echo ""
+
+echo "Building package: $PACKAGE"
+
+case "$PACKAGE" in
+
+busybox)
+    echo "BusyBox build not implemented yet"
+    ;;
+
+bash)
+    echo "GNU Bash build not implemented yet"
+    ;;
+
+curl)
+    echo "Curl build not implemented yet"
+    ;;
+
+*)
+    echo "Unknown package: $PACKAGE"
+    exit 1
+    ;;
+esac
