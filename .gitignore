@@ -1,0 +1,13 @@
+build/
+runtime/
+*.o
+*.a
+*.so
+*.lo
+*.la
+*.d
+*.tmp
+*.log
+config.log
+config.status
+autom4te.cache/
