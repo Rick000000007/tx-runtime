@@ -15,13 +15,11 @@ echo "Building package: $PACKAGE"
 case "$PACKAGE" in
 
 all)
-    echo "TX Runtime build placeholder"
-    mkdir -p out
-    echo "TX Runtime build completed." > out/build.txt
+    ./scripts/build-busybox.sh
     ;;
 
 busybox)
-    echo "BusyBox build not implemented yet"
+    ./scripts/build-busybox.sh
     ;;
 
 bash)
@@ -36,4 +34,5 @@ curl)
     echo "Unknown package: $PACKAGE"
     exit 1
     ;;
+
 esac
